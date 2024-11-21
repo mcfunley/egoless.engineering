@@ -115,7 +115,10 @@ table.slides tr {
 table.slides td {
   padding: 10px;
   vertical-align: top;
-  width: 50%;
+}
+
+table.slides td:first-child {
+  width: 65%;
 }
 
 @media(max-width: 700px) {
@@ -125,6 +128,9 @@ table.slides td {
   }
   table.slides td {
     display: block;
+    width: initial;
+  }
+  table.slides td:first-child {
     width: initial;
   }
 }
